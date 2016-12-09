@@ -24,21 +24,21 @@
   ],
   "code": {
     "api": {
-      "java": {
-        "mavenGroupId": "org.kurento.module",
-        "mavenArtifactId": "thatoverlay",
-        "mavenVersion": "0.0.1-SNAPSHOT",
-        "packageName": "org.kurento.module.thatoverlay"
-      },
       "js": {
         "nodeName": "kurento-module-thatoverlay",
-        "npmVersion": "0.0.1",
-        "npmDescription": ""
+        "npmDescription": "",
+        "npmVersion": "0.0.1"
+      },
+      "java": {
+        "mavenGroupId": "org.kurento.module",
+        "packageName": "org.kurento.module.thatoverlay",
+        "mavenArtifactId": "thatoverlay",
+        "mavenVersion": "0.0.1-SNAPSHOT"
       }
     },
     "implementation": {
-      "cppNamespace": "kurento::module::thatoverlay",
-      "lib": "libkmsthatoverlay"
+      "lib": "libkmsthatoverlay",
+      "cppNamespace": "kurento::module::thatoverlay"
     }
   },
   "remoteClasses": [
@@ -55,7 +55,80 @@
           }
         ],
         "doc": "Create an element"
-      }
+      },
+      "methods": [
+        {
+          "params": [
+            {
+              "name": "title",
+              "doc": "",
+              "type": "String"
+            },
+            {
+              "name": "titleFont",
+              "doc": "",
+              "type": "String"
+            },
+            {
+              "name": "tR",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "tG",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "tB",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "tA",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "watermark",
+              "doc": "",
+              "type": "String"
+            },
+            {
+              "name": "watermarkFont",
+              "doc": "",
+              "type": "String"
+            },
+            {
+              "name": "wR",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "wG",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "wB",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "wA",
+              "doc": "[0..1]",
+              "type": "float"
+            },
+            {
+              "name": "interval",
+              "doc": "Amount of frames before watermark will jump.",
+              "type": "int"
+            }
+          ],
+          "name": "setup",
+          "doc": "Set text, color and font for title and watermark."
+        }
+      ]
     }
   ],
   "complexTypes": [],
